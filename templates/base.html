@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load staticfiles %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Clone</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"  media="screen,projection"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+<body>
+
+  <nav class="#651fff deep-purple accent-3">
+    <div class="container nav-wrapper ">
+      <a href="/" class="brand-logo">FLAC</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+      </ul>
+    </div>
+  </nav>
+<div class="container">
+    <h3 style="text-align: center">What do you want to search on FLAC today?</h3>
+    <div class="row">
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: #d32f2f">flash_on</i>
+                <p>Fast craiglist scraper</p>
+                <p class="light center">Faster than any one you will ever find</p>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: #009688">filter_tilt_shift</i>
+                <p>Filter your searches</p>
+                <p class="light center">Filter searches based on your criteria</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: #283593">receipt</i>
+                <p>Beautiful frontend</p>
+                <p class="light center">Gives an even sexier feel of craiglist itself</p>
+
+
+            </div>
+        </div>
+    </div>
+    <form action="{% url 'newSearch' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="search" placeholder="Search Something...">
+        <button class="btn waves-effect waves-light btn-large #651fff deep-purple accent-3" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+    </button>
+    </form>
+     {% block content %}
+    {% endblock content %}
+
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+</body>
+</html>
