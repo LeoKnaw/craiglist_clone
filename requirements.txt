@@ -21,8 +21,10 @@ Click==7.0
 colorama==0.4.1
 cycler==0.10.0
 daemonize==2.5.0
+defusedxml==0.6.0
 dj-database-url==0.5.0
 Django==2.2.4
+django-allauth==0.40.0
 django-chartit==0.2.9
 django-crispy-forms==1.7.2
 django-heroku==0.3.1
@@ -48,6 +50,7 @@ google-cloud-translate==1.5.0
 googleapis-common-protos==1.6.0
 grpcio==1.21.1
 gunicorn==19.9.0
+heroku==0.1.4
 html5lib==1.0.1
 identify==1.4.5
 idna==2.7
@@ -109,7 +112,8 @@ PyRect==0.1.4
 PyScreeze==0.1.22
 PySocks==1.7.0
 pytest==5.1.0
-python-dateutil==2.8.0
+python-dateutil==1.5
+python3-openid==3.1.0
 PyTweening==1.0.3
 pytz==2018.6
 pywin32==224
