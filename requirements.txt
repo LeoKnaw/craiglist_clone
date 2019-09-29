@@ -104,7 +104,6 @@ PyMySQL==0.9.3
 pynput==1.4
 pyparsing==2.4.0
 pyperclip==1.7.0
-pypiwin32==223
 PyRect==0.1.4
 PyScreeze==0.1.22
 PySocks==1.7.0
