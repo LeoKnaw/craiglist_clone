@@ -1,1 +1,1 @@
-web: gunicorn flac.wsgi
+web: gunicorn -b :$PORT app:app
