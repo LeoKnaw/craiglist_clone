@@ -98,7 +98,7 @@ PyGetWindow==0.0.7
 Pygments==2.4.2
 PyHamcrest==1.9.0
 PyInstaller==3.4
-PyJWT==1.7.1
+PyJWT==2.4.0
 PyMsgBox==1.0.7
 PyMySQL==0.9.3
 pynput==1.4
